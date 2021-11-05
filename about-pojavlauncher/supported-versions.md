@@ -49,7 +49,7 @@ Thanks to the hard work from PojavLauncherTeam, both the Android and the iOS por
 
 ## Note for PojavLauncher iOS version 1.2:
 
-This version can not launch any version from 1.5.2 or below and any Forge build before 36.1.0 (for 1.16.5). This is because of the need to use OpenJDK 16, which was already ported to iOS by [@Diatrus](https://twitter.com/diatrus).
+This version can not launch any version from 1.5.2 or below and any Forge build before 36.1.4 (for 1.16.5). This is because of the need to use OpenJDK 16, which was already ported to iOS by [@Diatrus](https://twitter.com/diatrus). The current workaround is described [here](https://forums.minecraftforge.net/announcement/15-java-and-you-how-to-avoid-crashes/).
 
 This build is incompatible with 1.17 or above.
 
