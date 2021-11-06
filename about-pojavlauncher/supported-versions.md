@@ -14,7 +14,7 @@ Thanks to the hard work from PojavLauncherTeam, both the Android and the iOS por
 | ------------- | ------------- | ------------- |
 | 1.13 to 1.13.2 | Unable to access video settings menu | Unknown; the only way to change these settings is to use options.txt. |
 | 1.14 to 1.14.2 (1.14.3 is not yet tested) | Crashes with java.lang.NullPointerException after a few taps | Unknown |
-| Up to 1.8.9 | Game crashes a couple of minutes after joining the world | Enable VBO in Minecraft settings. Avoid using OptiFine. |
+| Up to 1.12.2 | Game crashes a couple of minutes after joining the world | Enable VBO in Minecraft settings. ~~Avoid using OptiFine.~~ |
 | 1.17 or later | Game crashes when loading or exits when initializing | Be sure to check [this guide](https://pojavlauncherteam.github.io/updates/117.html). |
 
 **Modded**
