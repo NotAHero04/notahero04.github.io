@@ -60,3 +60,7 @@ Due to the fact that this version doesn’t have the ability to add Java runtime
 ## Note for PojavLauncher Android with 32-bit systems:
 
 Java 17 builds for 32-bit platforms is incomplete, so 1.17 or later will not work.
+
+## Note for both Android/iOS ports:
+
+Switching between very different versions (like: from 1.17.1 -> 1.5.2) has a chance of getting NullPointerException. To fix it, navigate to the Minecraft folder and delete options.txt.
