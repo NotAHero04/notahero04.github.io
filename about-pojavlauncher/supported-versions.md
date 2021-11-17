@@ -10,42 +10,42 @@ Thanks to the hard work from PojavLauncherTeam, both the Android and the iOS por
 
 **Vanilla**
 
-| Version | Current problem | Workaround |
-| ------------- | ------------- | ------------- |
-| 1.13 to 1.13.2 | Unable to access video settings menu | Unknown; the only way to change these settings is to use options.txt. |
-| 1.14 to 1.14.2 (1.14.3 is not yet tested) | Crashes with java.lang.NullPointerException after a few taps | Unknown |
-| Up to 1.12.2 | Game crashes a couple of minutes after joining the world | Enable VBO in Minecraft settings. ~~Avoid using OptiFine.~~ |
-| 1.17 or later | Game crashes when loading or exits when initializing | Be sure to check [this guide](https://pojavlauncherteam.github.io/updates/117.html). |
+| Version | Current problem | Workaround | More information |
+| ------------- | ------------- | ------------- | ---------------------------- |
+| 1.13 to 1.13.2 | Unable to access video settings menu | Unknown; the only way to change these settings is to use options.txt. | This is a GLFW-related issue.
+| 1.14 to 1.14.2 (1.14.3 is not yet tested) | Crashes with java.lang.NullPointerException after a few taps | Unknown | This is a GLFW-related issue.
+| Up to 1.12.2 | Game crashes a couple of minutes after joining the world | Enable VBO in Minecraft settings. ~~Avoid using OptiFine.~~ | No.
+| 1.17 or later | Game crashes when loading or exits when initializing | Be sure to check [this guide](https://pojavlauncherteam.github.io/updates/117.html). | Minecraft 1.17 requires OpenGL 3.2 and Java 16.
 
 **Modded**
 
-| Version | Current problem | Workaround |
-| ------------- | ------------- | ------------- |
-| Fabric 1.14+ | Game crashes on startup | - Go to /sdcard/games/PojavLauncher/.minecraft/.fabric/remappedJars/minecraft-__**[Minecraft version]**__ (for Android 10+: /sdcard/Android/data/net.kdt.pojavlaunch(.debug)/.minecraft/.fabric/remappedJars/minecraft-__**[Minecraft version]**__), then rename zipfstmp__**[random number]**__.tmp to intermediary-fabric-loader-__**[Fabric loader version]**__-__**[Minecraft version]**__.jar |
-| Forge 1.17.1 | Game crashes on startup | Unknown |
-| LabyMod 1.8.9 | Game crashes when loading to 75% | Unknown |
+| Version | Current problem | Workaround | More information |
+| ------------- | ------------- | ------------- | ------------ |
+| Fabric 1.14+ | Game crashes on startup | Properly change the name of a remapped JAR file. See below. | No.
+| Forge 1.17.1 | Game crashes on startup | Unknown | An unknown error related to security handling occurred.
+| LabyMod 1.8.9 | Game crashes when loading to 75% | Unknown | Older JNA versions don’t support 64-bit Android devices. With the latest JNA, another error occurred, and a change in Android 7 seems to be the culprit. So this version may work on Android 6 or below, but untested. |
 
 ### Current known compatibility problems with PojavLauncher iOS (as of the version 2.0~alpha8)
 
 **Vanilla**
 
-| Version | Current problem | Workaround |
-| ------------- | ------------- | ------------- |
-| 1.8.9 or below (up to 1.12.2 on some testers) | Game crashes after a couple of seconds of joining the world | If on 1.8 or later, try enabling VBO from Minecraft video settings. If that method doesn’t work, or you are playing 1.7.10 or older, specify the environment variable `LIBGL_USEVBO=0`. The instruction to do this is [here](https://pojavlauncherteam.github.io/ios/wiki/going-further/environment-variables.html). OptiFine is not yet tested, however, it's thought to be unstable. |
-| 1.2.1-1.2.4 ~~and 1.4.4-1.4.7~~ | Game crashes when initializing | 1.4.4-1.4.7: Specify the environment variable `LIBGL_VERSION=2.1` (it seems to be fixed in an older build). 1.2.1-1.2.4: Unknown (the cause of problem is the same, but the trick above doesn't work). Forge 1.2.3-1.2.4 are known to work (but without FML loaded?) |
-| All RubyDung versions | Black screen | Unknown |
-| 1.17 or later | Game crashes | Be sure to check [this guide](https://pojavlauncherteam.github.io/updates/117.html). Note that some testers reported that the assets-v0 trick stops working from 21w37a onwards. |
-| [Upcoming] 1.18 snapshots | InvocationTargetException thrown when using Java 16 | Switch to Java 17 in launcher settings. |
+| Version | Current problem | Workaround | More information |
+| ------------- | ------------- | ------------- | -------------- |
+| 1.8.9 or below (up to 1.12.2 on some testers) | Game crashes after a couple of seconds of joining the world | If on 1.8 or later, try enabling VBO from Minecraft video settings. If that method doesn’t work, or you are playing 1.7.10 or older, specify the environment variable `LIBGL_USEVBO=0`. The instruction to do this is [here](https://pojavlauncherteam.github.io/ios/wiki/going-further/environment-variables.html). OptiFine is not yet tested, however, it's thought to be unstable. | No. |
+| 1.2.1-1.2.4 ~~and 1.4.4-1.4.7~~ | Game crashes when initializing | 1.4.4-1.4.7: Specify the environment variable `LIBGL_VERSION=2.1` (it seems to be fixed in an older build). 1.2.1-1.2.4: Unknown (the cause of problem is the same, but the trick above doesn't work). Forge 1.2.3-1.2.4 are known to work (but without FML loaded?) | No. |
+| All RubyDung versions | Black screen | Unknown | No. |
+| 1.17 or later | Game crashes | Be sure to check [this guide](https://pojavlauncherteam.github.io/updates/117.html). ~~Note that some testers reported that the assets-v0 trick stops working from 21w37a onwards.~~ | Minecraft 1.17 requires OpenGL 3.2 and Java 16.
+| [Upcoming] 1.18 snapshots | InvocationTargetException or UnsupportedOperationException thrown when using Java 16 | Switch to Java 17 in launcher settings. | Starting from 1.18 Pre-release 2, Minecraft uses Java 17. |
 
 **Modded**
 
-| Version | Current problem | Workaround |
-| ------------- | ------------- | ------------- |
-| Forge 1.1-1.2.4 | FML is not loaded | Unknown |
-| Forge 1.3.2-1.4.x (1.4.2-1.4.7 untested) | The game doesn’t load | Unknown |
+| Version | Current problem | Workaround | More information |
+| ------------- | ------------- | ------------- | -------------- |
+| Forge 1.1-1.2.4 | FML is not loaded | Unknown | No. |
+| Forge 1.3.2-1.4.x (1.4.2-1.4.7 untested) | The game doesn’t load | Unknown | The game won’t start even with enough libraries. An attempt to make Forge use newer libraries has been made, but unsuccessful. |
 | Forge 1.5-1.6.4 | NullPointerException thrown | Modify the json for Forge 1.7.10 and import it to these versions. A full instruction or a preset json will be added. |
 | Forge 1.17.1 | InvocationTargetException thrown | Unknown |
-| LabyMod 1.8.9, 1.12.2, 1.16.5 | Game crashes when it’s nearly done loading. | This bug currently affects iOS 13 or below; a workaround for these versions is unknown. |
+| LabyMod 1.8.9, 1.12.2, 1.16.5 | Game crashes when it’s nearly done loading. | This bug currently affects iOS 13 or below; a workaround for these versions is unknown. | Native JNA targets macOS 11.0 or later (for ARM architectures), and a port of the library to iOS 14 was made without any compatibility issues, but not iOS 13 or below. |
 
 ## Note for PojavLauncher iOS version 1.2:
 
