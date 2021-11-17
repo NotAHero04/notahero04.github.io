@@ -43,13 +43,13 @@ Thanks to the hard work from PojavLauncherTeam, both the Android and the iOS por
 | ------------- | ------------- | ------------- | -------------- |
 | Forge 1.1-1.2.4 | FML is not loaded | Unknown | No. |
 | Forge 1.3.2-1.4.x (1.4.2-1.4.7 untested) | The game doesn’t load | Unknown | The game won’t start even with enough libraries. An attempt to make Forge use newer libraries has been made, but unsuccessful. |
-| Forge 1.5-1.6.4 | NullPointerException thrown | Modify the json for Forge 1.7.10 and import it to these versions. A full instruction or a preset json will be added. |
-| Forge 1.17.1 | InvocationTargetException thrown | Unknown |
+| Forge 1.5-1.6.4 | NullPointerException thrown | Modify the json for Forge 1.7.10 and import it to these versions. A full instruction or a preset json will be added. | No. |
+| Forge 1.17.1 | InvocationTargetException thrown | Unknown | No. |
 | LabyMod 1.8.9, 1.12.2, 1.16.5 | Game crashes when it’s nearly done loading. | This bug currently affects iOS 13 or below; a workaround for these versions is unknown. | Native JNA targets macOS 11.0 or later (for ARM architectures), and a port of the library to iOS 14 was made without any compatibility issues, but not iOS 13 or below. |
 
 ## Note for PojavLauncher iOS version 1.2:
 
-This version can not launch any version from 1.5.2 or below and any Forge build before 36.1.4 (for 1.16.5). This is because of the need to use OpenJDK 16, which was already ported to iOS by [@Diatrus](https://twitter.com/diatrus). The current workaround is described [here](https://forums.minecraftforge.net/announcement/15-java-and-you-how-to-avoid-crashes/).
+This version can not launch any version from 1.5.2 or below and any Forge build before 36.1.4 (for 1.16.5). This is because of the need to use OpenJDK 16, which was already ported to iOS by [@Diatrus](https://twitter.com/diatrus). The current workaround for Forge is described [here](https://forums.minecraftforge.net/announcement/15-java-and-you-how-to-avoid-crashes/).
 
 This build is incompatible with 1.17 or above.
 
@@ -64,3 +64,8 @@ Java 17 builds for 32-bit platforms is incomplete, so 1.17 or later will not wor
 ## Note for both Android/iOS ports:
 
 Switching between very different versions (like: from 1.17.1 -> 1.5.2) has a chance of getting NullPointerException. To fix it, navigate to the Minecraft folder and delete options.txt.
+
+## [Android only] Fabric crashes/exit with code 1 on startup
+Known issue, workaround:
+- Go to /sdcard/games/PojavLauncher/.minecraft/.fabric/remappedJars/minecraft-__**[Minecraft version]**__ (for Android 10+: /sdcard/Android/data/net.kdt.pojavlaunch(.debug)/.minecraft/.fabric/remappedJars/minecraft-__**[Minecraft version]**__)
+- Rename zipfstmp__**[random number]**__.tmp to intermediary-fabric-loader-__**[Fabric loader version]**__-__**[Minecraft version]**__.jar
