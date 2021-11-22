@@ -25,5 +25,7 @@ Aside from conflicted mods (user side), there are some mods that doesn’t curre
 | ------- | ------- | ------- |
 | Forge 1.14.4, 1.15.2, **1.16.3-1.16.5** | Create | Crash on startup due to `GL_FRAMEBUFFER_INCOMPLETE_ATTACHMENT` on version 1.16.5_v0.3.2b. An user reported that the 1.16.3 version works. Not yet tested on iOS. |
 | Forge 1.12.2, Fabric 1.14-1.17.1, LiteLoader 1.12.x, Rift 1.13.x | Litematica | No information. |
-| Forge 1.7.10, 1.10.2, **1.12.2**, 1.16.5 | Modular Powersuits | White screen after opening menu (caused by a missing LWJGL OpenGL method |
+| Forge 1.7.10, 1.10.2, **1.12.2**, 1.16.5 | Modular Powersuits | White screen after opening menu (caused by a missing LWJGL OpenGL method) |
+| Fabric 1.16.5, 1.17.1 | Sodium Extra | Crash when trying to open video setting menu (happens randomly) |
+
 Note: bold **version numbers** represent a version (or a version on the provided range) of Minecraft which the mod is confirmed to not work.
