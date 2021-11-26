@@ -23,9 +23,9 @@ Thanks to the hard work from PojavLauncherTeam, both the Android and the iOS por
 | ------------- | ------------- | ------------- | ------------ |
 | Fabric 1.14+ | Game crashes on startup | Properly change the name of a remapped JAR file. See below. | No.
 | Forge 1.17.1 | Game crashes on startup | Unknown | An unknown error related to security handling occurred.
-| LabyMod 1.8.9 | Game crashes when loading to 75% | Unknown | Older JNA versions don’t support 64-bit Android devices. With the latest JNA, another error occurred, and a change in Android 7 seems to be the culprit. Android 5 is not supported because of the old `dlopen`. Not yet tested on Android 6. |
+| LabyMod 1.8.9 | Game crashes when loading to 75% | Unknown | Discord RPC utilizes JNA to work. Older JNA versions don’t support 64-bit Android devices. With the latest JNA, another error occurred, and a change in Android 7 seems to be the culprit. Android 5 is not supported because of the old `dlopen`. Not yet tested on Android 6. |
 
-### Current known compatibility problems with PojavLauncher iOS (as of the 2.0 development versions)
+### Current known compatibility problems with PojavLauncher iOS (as of the release 2.0)
 
 | Version | Current problem | Workaround | More information |
 | ------------- | ------------- | ------------- | -------------- |
