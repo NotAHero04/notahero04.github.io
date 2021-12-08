@@ -18,7 +18,7 @@ Aside from conflicted mods (user side), there are some mods that doesn’t curre
 | Mod platform and version | Mod | Issue |
 | - | - | - |
 | Fabric 1.15.2, **1.16.2-1.16.5**, **1.17.1** | OptiFabric | Can not load the mapped files normally |
-| Forge 1.8, 1.8.8-1.9, 1.9.4, 1.10, 1.10.2, 1.11, 1.11.2, **1.12.x**, 1.13.2, 1.14.2-1.14.4, 1.15.2, 1.16.1-1.16.5 | Random Patches | Game exits on startup |
+| Forge 1.8, 1.8.8-1.9, 1.9.4, 1.10, 1.10.2, 1.11, 1.11.2, **1.12.x**, 1.13.2, 1.14.2-1.14.4, ~~1.15.2~~, ~~1.16.1-1.16.5~~ | Random Patches | Game exits on startup |
 
 ### List of mods that don’t work with PojavLauncher (reported by users; see issue [#1948](https://github.com/PojavLauncherTeam/PojavLauncher/issues/1948))
 
@@ -29,4 +29,4 @@ Aside from conflicted mods (user side), there are some mods that doesn’t curre
 | Forge 1.7.10, 1.10.2, **1.12.2**, 1.16.5 | Modular Powersuits | White screen after opening menu (caused by a missing LWJGL OpenGL method) |
 | Fabric 1.16.5, 1.17.1 | Sodium Extra | Crash when trying to open video setting menu (happens randomly) |
 
-Note: bold **version numbers** represent a version (or a version on the provided range) of Minecraft which the mod is confirmed to not work.
+Note: bold **version numbers** represent a version (or a version on the provided range) of Minecraft which the mod is confirmed to not work. Versions with ~~strikethrough~~ means that it's confirmed to work with PojavLauncher, and thus they are safe to use.
