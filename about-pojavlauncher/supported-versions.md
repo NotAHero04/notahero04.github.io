@@ -24,7 +24,7 @@ Thanks to the hard work from PojavLauncherTeam, both the Android and the iOS por
 | All versions before 1.14 | Game crashes after a couple of seconds of joining the world | Turn on the VBO in your Minecraft settings (since 1.8), or specify the environment variable `LIBGL_USEVBO=0` (all versions). The instruction to do this is [here](https://pojavlauncherteam.github.io/ios/wiki/going-further/environment-variables.html). |
 | 1.2.1-1.2.4 | Game crashes when loading | [An untested workaround is available.](https://github.com/NotAHero04/RandomPojavThings/tree/main/Oldr) |
 | LabyMod (1.8.9, 1.12.2, 1.16.5) | Game crashes | Currently only supports iOS 14.0 or later. |
-
+| All versions since Minecraft 1.17 | Game crashes | Switch the renderer to `tinygl4angle`. |
 ## Note for mods compatibility
 
 Most mods should work with a compatible setting, but mods that's designed to run on a full desktop environment will not work. Report incompatible mods [here.](https://github.com/PojavLauncherTeam/PojavLauncher/issues/1948)
