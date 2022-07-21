@@ -25,6 +25,9 @@ Thanks to the hard work from PojavLauncherTeam, both the Android and the iOS por
 | 1.2.1-1.2.4 | Game crashes when loading | [An untested workaround is available.](https://github.com/NotAHero04/RandomPojavThings/tree/main/Oldr) |
 | LabyMod (1.8.9, 1.12.2, 1.16.5) | Game crashes | Currently only supports iOS 14.0 or later. |
 | All versions since Minecraft 1.17 | Game crashes | Switch the renderer to `tinygl4angle`. |
+
+Hey hey! Note that this is is not complete, and therefore, a Minecraft version that's not listed here may turn out to be not working at all! Report bugs [here](https://github.com/PojavLauncherTeam/PojavLauncher/issues)
+
 ## Note for mods compatibility
 
 Most mods should work with a compatible setting, but mods that's designed to run on a full desktop environment will not work. Report incompatible mods [here.](https://github.com/PojavLauncherTeam/PojavLauncher/issues/1948)
