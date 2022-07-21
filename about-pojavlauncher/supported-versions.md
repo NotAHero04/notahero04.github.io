@@ -26,7 +26,7 @@ Thanks to the hard work from PojavLauncherTeam, both the Android and the iOS por
 | LabyMod (1.8.9, 1.12.2, 1.16.5) | Game crashes | Currently only supports iOS 14.0 or later. |
 | All versions since Minecraft 1.17 | Game crashes | Switch the renderer to `tinygl4angle`. |
 
-Hey hey! Note that this is is not complete, and therefore, a Minecraft version that's not listed here may turn out to be not working at all! Report bugs [here](https://github.com/PojavLauncherTeam/PojavLauncher/issues)
+Hey hey! Note that this list is not complete, and therefore, a Minecraft version that's not listed here may turn out to be not working at all! Report bugs [here](https://github.com/PojavLauncherTeam/PojavLauncher/issues)
 
 ## Note for mods compatibility
 
